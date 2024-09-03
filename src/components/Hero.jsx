@@ -26,8 +26,8 @@ const Hero = () => {
   return (
     <div>
       <div className="bg-[#F8F9FA] px-16 py-4 flex items-center gap-4">
-        {listItem.map((item) => (
-          <div className="bg-white p-3 rounded-md flex items-center gap-3 w-[450px]">
+        {listItem.map((item,i) => (
+          <div className="bg-white p-3 rounded-md flex items-center gap-3 w-[450px]" key={i}>
             <img src={item.img} alt="" />
             <div>
               <h2 className="text-[#E21B22] text-[15px] font-semibold">
